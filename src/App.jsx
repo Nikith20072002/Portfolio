@@ -13,12 +13,12 @@ const profile = {
   location: 'Hyderabad, India',
   email: 'nikith20072002@gmail.com', // Replace with your professional email
   github: 'https://github.com/Nikith20072002', // Replace with your GitHub profile
-  linkedin: 'https://linkedin.com/', // Replace with your LinkedIn profile
+  linkedin: 'https://linkedin.com/in/banda-nikith-sai-reddy-680250209',
   resume: '/Nikith-Sai-Reddy-Banda-Resume.pdf', // Put your resume PDF in public/
 }
 
 const socialTags = [
-  { label: 'GitHub', handle: '@your-github', href: profile.github, icon: Github, kind: 'github' },
+  { label: 'GitHub', handle: '@nikith20072002', href: profile.github, icon: Github, kind: 'github' },
   { label: 'LinkedIn', handle: 'Connect professionally', href: profile.linkedin, icon: Linkedin, kind: 'linkedin' },
   { label: 'Email', handle: profile.email, href: `mailto:${profile.email}`, icon: Mail, kind: 'email' },
   { label: 'Resume', handle: 'PDF · Download', href: profile.resume, icon: FileText, kind: 'resume', download: true },
@@ -53,7 +53,37 @@ const skills = [
   { name: 'HTML / CSS / JavaScript', group: 'Web' }, { name: 'React', group: 'Web · beginner' },
   { name: 'Node.js', group: 'Backend · beginner' }, { name: 'MongoDB', group: 'Database' },
   { name: 'Git / GitHub', group: 'Developer tools' }, { name: 'Snowflake', group: 'Data platform learning' },
-  { name: 'C++ / Java / C#', group: 'Programming foundations' }, { name: 'Flask', group: 'API · project use' },
+  { name: 'C / C++', group: 'Programming foundations' },
+  { name: 'Snowflake External Stages', group: 'Data engineering' },
+  { name: 'Snowflake Database', group: 'Data platform' },
+  { name: 'Snowflake SQL Worksheets', group: 'Data platform' },
+  { name: 'Snowflake Cloud', group: 'Cloud data platform' },
+  { name: 'Agile Methodologies', group: 'Software development' },
+  { name: 'Internet of Things (IoT)', group: 'Computer science' },
+  { name: 'Computer Science', group: 'Foundations' },
+  { name: 'Machine Learning', group: 'Artificial intelligence' },
+  { name: 'Analytics', group: 'Data analysis' },
+  { name: 'Dashboards', group: 'Data visualization' },
+  { name: 'Data Annotation', group: 'Data preparation' },
+  { name: 'Spreadsheets', group: 'Data analysis' },
+  { name: 'NumPy', group: 'Python analytics' },
+  { name: 'Matplotlib', group: 'Data visualization' },
+  { name: 'Web Scraping', group: 'Data collection' },
+  { name: 'Microsoft Office', group: 'Productivity tools' },
+  { name: 'Python in Excel', group: 'Data analysis' },
+  { name: 'Microsoft PowerPoint', group: 'Productivity tools' },
+  { name: 'ETL', group: 'Data engineering' },
+  { name: 'Data Modeling', group: 'Data engineering' },
+  { name: 'Technical Requirements', group: 'Software engineering' },
+  { name: 'Problem Solving', group: 'Computer science' },
+  { name: 'Analytical Skills', group: 'Data analysis' },
+  { name: 'Microsoft SQL Server', group: 'Database' },
+  { name: 'Artificial Intelligence', group: 'Computer science' },
+  { name: 'Generative AI', group: 'Artificial intelligence' },
+  { name: 'GPT-4', group: 'Generative AI' },
+  { name: 'Data Science', group: 'Analytics' },
+  { name: 'Data-driven Decision Making', group: 'Data analysis' },
+  { name: 'Business Analysis', group: 'Data analysis' },
 ]
 
 const experience = [
@@ -61,15 +91,50 @@ const experience = [
 ]
 
 const education = [
-  { title: 'B.Tech — Computer Science & Engineering', org: 'K. G. Reddy College of Engineering and Technology · JNTUH', date: '2019 — 2023', score: 'CGPA 6.57' },
-  { title: 'Intermediate', org: 'Telangana', date: 'Completed', score: '83.7%' },
-  { title: 'SSC / 10th', org: 'Telangana', date: 'Completed', score: '67.2%' },
+  { title: 'B.Tech — Computer Science & Engineering', org: 'K. G. Reddy College of Engineering and Technology · JNTUH', date: '2020 — 2025' },
+  { title: 'Intermediate', org: 'Telangana', date: '2020', },
+  { title: 'SSC / 10th', org: 'Telangana', date: '2018'},
 ]
 
 const certifications = [
+  { title: 'Hands-On Essentials: Data Warehousing Workshop', issuer: 'Snowflake', date: 'OCT 2026', icon: Database },
+  { title: 'Exploring SAP Datasphere — Course Completion', issuer: 'SAP', date: 'MAY 2025', icon: Database },
+  { title: 'Data Analyst Certification', issuer: 'OneRoadmap', date: 'APR 2025', icon: BarChart3 },
   { title: 'Deloitte Australia — Data Analytics Job Simulation', issuer: 'Forage', date: 'FEB 2025', icon: BarChart3 },
-  { title: 'Learning Excel: Data Analysis', issuer: 'Online course', date: '2024', icon: FileText },
-  { title: 'Snowflake Learn — Guided learning', issuer: 'Snowflake', date: 'IN PROGRESS', icon: Database },
+  { title: 'SQL (Basic)', issuer: 'HackerRank', date: 'JAN 2025', icon: Code2 },
+  { title: 'Python (Basics)', issuer: 'HackerRank', date: 'JAN 2025', icon: Code2 },
+  { title: 'Big Data Foundations — Level 1', issuer: 'IBM', date: 'NOV 2024', icon: Database },
+  { title: 'Big Data 101', issuer: 'IBM SkillsBuild', date: 'NOV 2024', icon: Database },
+  { title: 'Data Fundamentals', issuer: 'IBM', date: 'NOV 2024', icon: BarChart3 },
+  { title: 'Career Essentials in Data Analysis', issuer: 'Microsoft and LinkedIn', date: 'NOV 2024', icon: BarChart3 },
+  { title: 'How to Use Data Visualization to Make Better Decisions—Faster', issuer: 'LinkedIn Learning', date: 'JAN 2024', icon: BarChart3 },
+  { title: 'Introduction to Prompt Engineering for Generative AI', issuer: 'LinkedIn Learning', date: 'JAN 2024', icon: Code2 },
+  { title: 'Programming Foundations: Data Structures', issuer: 'LinkedIn Learning', date: 'JAN 2024', icon: Code2 },
+  { title: 'Become a Data Analyst', issuer: 'LinkedIn Learning', date: 'JAN 2024', icon: BarChart3 },
+  { title: 'SQL: Data Reporting and Analysis', issuer: 'LinkedIn Learning', date: 'JAN 2024', icon: Code2 },
+  { title: 'Tableau Essential Training', issuer: 'LinkedIn Learning', date: 'JAN 2024', icon: BarChart3 },
+  { title: 'Learning Data Visualization', issuer: 'LinkedIn Learning', date: 'JAN 2024', icon: BarChart3 },
+  { title: 'Software Testing Tutorial', issuer: 'Great Learning', date: 'FEB 2023', icon: Code2 },
+  { title: 'What is IoT?', issuer: 'Great Learning', date: 'MAR 2023', icon: Code2 },
+  { title: 'Machine Learning A-Z: AI, Python & R', issuer: 'Udemy', date: 'MAR 2023', icon: BarChart3 },
+  { title: 'Power BI Essential Training', issuer: 'LinkedIn Learning', date: 'DEC 2023', icon: BarChart3 },
+  { title: 'Introduction to Career Skills in Data Analytics', issuer: 'LinkedIn Learning', date: 'DEC 2023', icon: BarChart3 },
+  { title: 'Predictive Analytics Essential Training: Data Mining', issuer: 'LinkedIn Learning', date: 'DEC 2023', icon: BarChart3 },
+  { title: 'Excel Statistics Essential Training: 1', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: BarChart3 },
+  { title: 'Learning Data Analytics Part 2: Extending and Applying Core Knowledge', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: BarChart3 },
+  { title: 'Succeeding in Software Testing', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: Code2 },
+  { title: 'Agile Testing', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: Code2 },
+  { title: 'Software Testing Tips Weekly', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: Code2 },
+  { title: 'Data Cleaning in Python Essential Training', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: Code2 },
+  { title: 'Learning Data Analytics: 1 Foundations', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: BarChart3 },
+  { title: 'Statistics Foundations 1: The Basics', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: BarChart3 },
+  { title: 'Data Fluency: Exploring and Describing Data', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: BarChart3 },
+  { title: 'What Is Generative AI?', issuer: 'LinkedIn Learning', date: 'SEP 2023', icon: Code2 },
+  { title: 'Getting Started with Bard, Google’s Experimental AI', issuer: 'LinkedIn Learning', date: 'SEP 2023', icon: Code2 },
+  { title: 'Learning Excel: Data Analysis', issuer: 'LinkedIn Learning', date: 'SEP 2023', icon: FileText },
+  { title: 'Python in Excel', issuer: 'LinkedIn Learning', date: 'SEP 2023', icon: Code2 },
+  { title: 'Power BI: Dashboards for Beginners', issuer: 'LinkedIn Learning', date: 'SEP 2023', icon: BarChart3 },
+  { title: 'GPT-4 Foundations: Building AI-Powered Apps', issuer: 'LinkedIn Learning', date: 'SEP 2023', icon: Code2 },
 ]
 
 function Badges() {
@@ -83,12 +148,38 @@ function Badges() {
     document.body.appendChild(script)
   }, [])
 
-  return <div
-    data-iframe-width="150"
-    data-iframe-height="270"
-    data-share-badge-id="eb256e43-8705-4c58-813a-07d03f749eff"
-    data-share-badge-host="https://www.credly.com"
-  />
+  return <div className="credly-badges">
+    <div
+      data-iframe-width="150"
+      data-iframe-height="270"
+      data-share-badge-id="eb256e43-8705-4c58-813a-07d03f749eff"
+      data-share-badge-host="https://www.credly.com"
+    />
+    <div
+      data-iframe-width="150"
+      data-iframe-height="270"
+      data-share-badge-id="45da2f4d-c0b6-4309-a4e1-dc7f9b0be9d1"
+      data-share-badge-host="https://www.credly.com"
+    />
+    <img
+      src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/196774037"
+      width="150"
+      height="270"
+      alt="Accredible credential badge"
+    />
+    <a
+      className="google-badge-link"
+      href="https://www.skills.google/public_profiles/6fd1dfbe-3eab-47bf-a98d-7219c107f1a3/badges/28834238"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <img
+        src="/google-cloud-data-analytics-essentials.png"
+        width="150"
+        alt="Google Cloud Data Analytics Essentials completion badge"
+      />
+    </a>
+  </div>
 }
 
 function SectionTitle({ eyebrow, title, id }) {
@@ -154,15 +245,13 @@ function App() {
 
         <section className="projects-section" id="projects"><SectionTitle eyebrow="SELECTED WORK / 01" title="Pinned projects"/><div className="project-controls"><p>Things I’ve explored, analyzed, and built.</p><div className="filters">{['All','Analytics','Machine Learning','Web development'].map(f=><button key={f} className={filter===f?'selected':''} onClick={()=>setFilter(f)}>{f}</button>)}</div></div><div className="repo-grid">{filteredProjects.map(p=><RepoCard key={p.repo} project={p}/>)}</div><div className="all-projects"><span>More experiments will find their way here.</span><a href={profile.github} target="_blank" rel="noreferrer">Browse GitHub <ArrowUpRight size={14}/></a></div></section>
 
-        <section className="contribution-section"><SectionTitle eyebrow="CONSISTENCY OVER PERFECTION / 02" title="Learning activity"/><div className="contrib-card"><div className="contrib-top"><div><b>Building, one step at a time</b><p>A visual placeholder for your GitHub contribution activity.</p></div><span>ACTIVITY OVERVIEW</span></div><div className="months">{['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'].map(m=><span key={m}>{m}</span>)}</div><div className="heatmap">{Array.from({length:156},(_,i)=>{const n=(i*17+i%7*3)%11;return <i key={i} className={n<4?'':n<7?'level-1':n<9?'level-2':n===9?'level-3':'level-4'}/>})}</div><div className="heatmap-legend"><span>Less</span>{['','level-1','level-2','level-3','level-4'].map(c=><i key={c} className={c}/>)}<span>More</span><small>Decorative sample — connect your GitHub profile for real activity.</small></div></div></section>
-
         <section className="experience-section" id="experience"><SectionTitle eyebrow="WHERE I’VE LEARNED / 03" title="Experience"/><div className="experience-list">{experience.map((e,i)=><article className="experience-item" key={e.title}><div className="timeline-index">0{i+1}</div><div className="experience-content"><div className="experience-meta">{e.date}</div><h3>{e.title}</h3><div className="experience-org">{e.org}</div><p>{e.detail}</p></div><ArrowUpRight className="experience-arrow" size={17}/></article>)}</div></section>
 
-        <section className="education-section"><SectionTitle eyebrow="FOUNDATIONS / 04" title="Education"/><div className="education-list">{education.map((e,i)=><div className="education-item" key={e.title}><span className="education-icon"><GraduationCap size={18}/></span><div><h3>{e.title}</h3><p>{e.org}</p></div><div className="education-end"><span>{e.date}</span><b>{e.score}</b></div></div>)}</div></section>
+        <section className="education-section"><SectionTitle eyebrow="FOUNDATIONS / 04" title="Education"/><div className="education-list">{education.map((e,i)=><div className="education-item" key={e.title}><span className="education-icon"><GraduationCap size={18}/></span><div><h3>{e.title}</h3><p>{e.org}</p></div><div className="education-end"><span>{e.date}</span></div></div>)}</div></section>
 
         <section className="skills-section" id="skills"><SectionTitle eyebrow="TOOLS OF THE TRADE / 05" title="Skills & technologies"/><p className="section-description">A practical and growing toolkit across data analysis, reporting, programming, and web development.</p><div className="skills-tags">{skills.map(s=><span key={s.name} title={s.group}>{s.name}<small>{s.group}</small></span>)}</div></section>
 
-        <section className="cert-section" id="certifications"><SectionTitle eyebrow="KEEP LEARNING / 06" title="Certifications & learning"/><div className="cert-list">{certifications.map(c=>{const Icon=c.icon;return <article className="cert-item" key={c.title}><span className="cert-icon"><Icon size={18}/></span><div><h3>{c.title}</h3><p>{c.issuer}</p></div><span className="cert-date">{c.date}</span><ArrowUpRight size={15}/></article>})}</div><p className="verify-note">Verify credential names and add credential URLs before publishing.</p></section>
+        <section className="cert-section" id="certifications"><SectionTitle eyebrow="KEEP LEARNING / 06" title="Certifications & learning"/><div className="cert-list">{certifications.map(c=>{const Icon=c.icon;return <article className="cert-item" key={c.title}><span className="cert-icon"><Icon size={18}/></span><div><h3>{c.title}</h3><p>{c.issuer}</p></div><span className="cert-date">{c.date}</span><ArrowUpRight size={15}/></article>})}</div><p className="verify-note">Credentials listed from your LinkedIn certificates export.</p></section>
 
         <section className="contact-section" id="contact"><div className="contact-copy"><span className="section-eyebrow">THE NEXT CHAPTER / 07</span><h2>Let’s make something<br/><span>meaningful.</span></h2><p>Have an opportunity, collaboration, or interesting data problem? I’d be glad to connect.</p><div className="contact-buttons"><a href={`mailto:${profile.email}`} className="button primary"><Send size={15}/> Say hello <ArrowRight size={15}/></a><button className="button outline" onClick={copyEmail}>{copied?<Check size={15}/>:<Copy size={15}/>} {copied?'Copied email':'Copy email'}</button></div></div><div className="contact-card"><span>CONTACT CARD</span><div className="contact-initials">N.</div><b>{profile.name}</b><small>{profile.role}</small><a href={`mailto:${profile.email}`}><Mail size={14}/>{profile.email}</a><a href={profile.linkedin} target="_blank" rel="noreferrer"><Linkedin size={14}/>LinkedIn profile <ArrowUpRight size={12}/></a><a href={profile.github} target="_blank" rel="noreferrer"><Github size={14}/>GitHub profile <ArrowUpRight size={12}/></a></div></section>
 
@@ -173,7 +262,6 @@ function App() {
         <section className="right-card about-right" id="about"><div className="right-title"><span className="right-icon"><BadgeCheck size={16}/></span><h3>About me</h3></div><p>I’m a Computer Science graduate with a passion for data analytics, visualization, and building solutions. I enjoy learning new technologies and working on real-world projects that create impact.</p><div className="detail-line"><span>⌖</span>{profile.location}</div><div className="detail-line"><GraduationCap size={14}/><span className="detail-text">B.Tech CSE · KG Reddy College</span></div><div className="detail-line"><BriefcaseBusiness size={14}/><span className="detail-text">Aspiring Data Analyst</span></div><div className="detail-line"><Mail size={14}/><a href={`mailto:${profile.email}`}>{profile.email}</a></div></section>
         <section className="right-card"><div className="right-title"><span className="right-icon blue"><BarChart3 size={16}/></span><h3>Quick stats</h3></div><div className="stats-grid"><div><b>6+</b><span>Projects & exercises</span></div><div><b>10+</b><span>Tools explored</span></div><div><b>3</b><span>Learning tracks</span></div></div><small className="right-muted">Portfolio highlights, not verified live counters.</small></section>
         <section className="right-card"><div className="right-title"><span className="right-icon purple"><Code2 size={16}/></span><h3>Top skills</h3></div><div className="right-tags">{skills.slice(0,13).map(s=><a href="#skills" key={s.name}>{s.name}</a>)}</div></section>
-        <section className="right-card"><div className="right-title"><span className="right-icon yellow"><GraduationCap size={17}/></span><h3>Education</h3></div><div className="right-education"><span className="education-bullet"/><b>B.Tech in Computer Science & Engineering</b><p>K. G. Reddy College of Engineering and Technology</p><div><span>2019 — 2023</span><strong>CGPA: 6.57</strong></div></div><div className="right-education extra-education"><span className="education-bullet"/><b>Intermediate</b><p>Telangana</p><div><span>Completed</span><strong>83.7%</strong></div></div><div className="right-education extra-education"><span className="education-bullet"/><b>SSC / 10th</b><p>Telangana</p><div><span>Completed</span><strong>67.2%</strong></div></div></section>
         <section className="right-card"><div className="right-title"><span className="right-icon green"><Award size={16}/></span><h3>Badges</h3></div><Badges/></section>
         <section className="right-card social-right"><div className="right-title"><span className="right-icon"><ExternalLink size={15}/></span><h3>Find me online</h3></div>{socialTags.map(s=>{const Icon=s.icon;return <a className="social-row" key={s.label} href={s.href} target={s.label==='Email'||s.label==='Resume'?undefined:'_blank'} rel="noreferrer" download={s.download||undefined}><span className={`social-row-icon ${s.kind}`}><Icon size={15}/></span><span><b>{s.label}</b><small>{s.handle}</small></span><ArrowUpRight size={13}/></a>})}</section>
       </aside>
