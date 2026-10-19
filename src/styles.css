@@ -30,7 +30,7 @@
   .repo-icon.blue,.repo-icon.green,.repo-icon.purple,.repo-icon.orange,.repo-icon.cyan,.education-icon,.cert-icon{background:#2a2b27;border-color:#41423b}
   .repo-name>a,.all-projects a,.repo-foot>a,.contact-card>a{color:#9ab0ff}
   .repo-link,.repo-foot>span,.timeline-index,.experience-arrow,.cert-item>svg:last-child{color:#aaa99f}
-  .repo-tags span,.skills-tags>span,.right-tags a{background:#292a26;border-color:#3d3e38;color:#d5d5ce}
+  .repo-tags span,.skills-tags>span,.right-tags a{background:#000000;border-color:#3d3e38;color:#d5d5ce}
   .skills-tags small{color:#9f9f97}
   .heatmap i,.heatmap-legend i{background:#30312c}
   .heatmap i.level-1,.heatmap-legend i.level-1{background:#24462e}
