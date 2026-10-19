@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
   ArrowDownRight, ArrowRight, ArrowUpRight, Award, BadgeCheck, BarChart3,
   BriefcaseBusiness, Check, ChevronDown, Code2, Copy, Database, Download,
   ExternalLink, FileText, Github, GraduationCap, Linkedin, Mail, Menu,
-  Moon, Phone, Send, ShieldCheck, Sparkles, Terminal, X
+  Moon, Phone, Send, Sparkles, X
 } from 'lucide-react'
 
 const profile = {
@@ -16,13 +16,6 @@ const profile = {
   linkedin: 'https://linkedin.com/', // Replace with your LinkedIn profile
   resume: '/Nikith-Sai-Reddy-Banda-Resume.pdf', // Put your resume PDF in public/
 }
-
-const badges = [
-  { label: 'Data Analytics', kind: 'blue', icon: BarChart3, href: '#skills' },
-  { label: 'Python', kind: 'yellow', icon: Code2, href: '#skills' },
-  { label: 'GitHub Actions', kind: 'purple', icon: Terminal, href: '#certifications' },
-  { label: 'Open to Work', kind: 'green', icon: BadgeCheck, href: '#contact' },
-]
 
 const socialTags = [
   { label: 'GitHub', handle: '@your-github', href: profile.github, icon: Github, kind: 'github' },
@@ -79,9 +72,23 @@ const certifications = [
   { title: 'Snowflake Learn — Guided learning', issuer: 'Snowflake', date: 'IN PROGRESS', icon: Database },
 ]
 
-function Badge({ item }) {
-  const Icon = item.icon
-  return <a className={`badge ${item.kind}`} href={item.href}><Icon size={13}/>{item.label}<ArrowUpRight size={10} className="badge-arrow"/></a>
+function Badges() {
+  useEffect(() => {
+    const scriptUrl = 'https://cdn.credly.com/assets/utilities/embed.js'
+    if (document.querySelector(`script[src="${scriptUrl}"]`)) return
+
+    const script = document.createElement('script')
+    script.src = scriptUrl
+    script.async = true
+    document.body.appendChild(script)
+  }, [])
+
+  return <div
+    data-iframe-width="150"
+    data-iframe-height="270"
+    data-share-badge-id="eb256e43-8705-4c58-813a-07d03f749eff"
+    data-share-badge-host="https://www.credly.com"
+  />
 }
 
 function SectionTitle({ eyebrow, title, id }) {
@@ -134,7 +141,6 @@ function App() {
         <p className="profile-bio">Turning data into meaningful insights and ideas into impact.</p>
         <a className="resume-button" href={profile.resume} download><Download size={16}/> Download Resume <ArrowDownRight size={15}/></a>
         <div className="profile-socials">{socialTags.map(s=>{const Icon=s.icon;return <a key={s.label} href={s.href} target={s.label==='Email'||s.label==='Resume'?undefined:'_blank'} rel="noreferrer" className={`social-tag ${s.kind}`} download={s.download||undefined}><Icon size={16}/><span>{s.label}</span><ArrowUpRight size={11}/></a>})}</div>
-        <div className="side-block"><div className="side-heading">PROFILE BADGES <span>04</span></div><div className="badge-list">{badges.map(b=><Badge key={b.label} item={b}/>)}</div><p className="micro-note">Badge links are customizable. Add verified credentials where available.</p></div>
         <div className="side-block personal-details"><div className="side-heading">DETAILS</div><p><span>⌖</span>{profile.location}</p><p><span>⌘</span>Computer Science</p><p><span>◷</span>Learning & building</p><p><span>↗</span>Open to entry-level roles</p></div>
         <div className="side-quote">“Make the complex clear. Make the data useful.”</div>
       </aside>
@@ -142,7 +148,7 @@ function App() {
       <main className="main-column">
         <section className="intro-card" id="home">
           <div className="intro-meta"><span><span className="file-dot"/> README.md</span><span>LAST UPDATED · OCT 2026</span></div>
-          <div className="intro-body"><div className="intro-copy"><div className="kicker">HELLO, WORLD <span>✳</span></div><h2>Hi there, I’m <span>Nikith.</span></h2><p className="intro-lead">A Computer Science graduate with a passion for <em>data, analytics, and building solutions</em> that create real impact.</p><p className="intro-desc">I enjoy working with data, creating visualizations, learning modern data tools, and developing web applications. This portfolio brings together my projects, skills, experience, and ongoing learning journey.</p><div className="intro-actions"><a href="#projects" className="button primary"><Code2 size={16}/> View my work <ArrowRight size={15}/></a><a href={profile.resume} className="button outline" download><Download size={15}/> Resume PDF</a><a href="#contact" className="button text-button">Contact <ArrowUpRight size={14}/></a></div><div className="badge-strip">{badges.map(b=><Badge key={b.label} item={b}/>)}</div></div>
+          <div className="intro-body"><div className="intro-copy"><div className="kicker">HELLO, WORLD <span>✳</span></div><h2>Hi there, I’m <span>Nikith.</span></h2><p className="intro-lead">A Computer Science graduate with a passion for <em>data, analytics, and building solutions</em> that create real impact.</p><p className="intro-desc">I enjoy working with data, creating visualizations, learning modern data tools, and developing web applications. This portfolio brings together my projects, skills, experience, and ongoing learning journey.</p><div className="intro-actions"><a href="#projects" className="button primary"><Code2 size={16}/> View my work <ArrowRight size={15}/></a><a href={profile.resume} className="button outline" download><Download size={15}/> Resume PDF</a><a href="#contact" className="button text-button">Contact <ArrowUpRight size={14}/></a></div></div>
           <div className="code-window"><div className="code-top"><div><i/><i/><i/></div><span>nikith.profile.json</span><button onClick={copyEmail} title="Copy email"><Copy size={13}/></button></div><div className="code-body"><div className="line-numbers">01<br/>02<br/>03<br/>04<br/>05<br/>06<br/>07<br/>08<br/>09<br/>10</div><pre><span className="code-pink">const</span> nikith = {'{'}<br/>  name: <span className="code-green">"Nikith Sai Reddy Banda"</span>,<br/>  role: <span className="code-green">"Aspiring Data Analyst"</span>,<br/>  degree: <span className="code-green">"B.Tech CSE"</span>,<br/>  location: <span className="code-green">"India"</span>,<br/>  interests: [<br/>    <span className="code-yellow">"Data Analytics"</span>,<br/>    <span className="code-yellow">"Python & BI"</span>,<br/>    <span className="code-yellow">"Web Development"</span><br/>  ]<br/>{'}'}</pre></div><div className="code-bottom"><span><i/> PROFILE.JSON</span><span>UTF-8 · JS</span></div></div></div>
         </section>
 
@@ -168,7 +174,7 @@ function App() {
         <section className="right-card"><div className="right-title"><span className="right-icon blue"><BarChart3 size={16}/></span><h3>Quick stats</h3></div><div className="stats-grid"><div><b>6+</b><span>Projects & exercises</span></div><div><b>10+</b><span>Tools explored</span></div><div><b>3</b><span>Learning tracks</span></div></div><small className="right-muted">Portfolio highlights, not verified live counters.</small></section>
         <section className="right-card"><div className="right-title"><span className="right-icon purple"><Code2 size={16}/></span><h3>Top skills</h3></div><div className="right-tags">{skills.slice(0,13).map(s=><a href="#skills" key={s.name}>{s.name}</a>)}</div></section>
         <section className="right-card"><div className="right-title"><span className="right-icon yellow"><GraduationCap size={17}/></span><h3>Education</h3></div><div className="right-education"><span className="education-bullet"/><b>B.Tech in Computer Science & Engineering</b><p>K. G. Reddy College of Engineering and Technology</p><div><span>2019 — 2023</span><strong>CGPA: 6.57</strong></div></div><div className="right-education extra-education"><span className="education-bullet"/><b>Intermediate</b><p>Telangana</p><div><span>Completed</span><strong>83.7%</strong></div></div><div className="right-education extra-education"><span className="education-bullet"/><b>SSC / 10th</b><p>Telangana</p><div><span>Completed</span><strong>67.2%</strong></div></div></section>
-        <section className="right-card"><div className="right-title"><span className="right-icon green"><Award size={16}/></span><h3>Badges & credentials</h3></div>{certifications.map(c=><div className="right-cert" key={c.title}><ShieldCheck size={15}/><div><b>{c.title}</b><span>{c.issuer} · {c.date}</span></div></div>)}</section>
+        <section className="right-card"><div className="right-title"><span className="right-icon green"><Award size={16}/></span><h3>Badges</h3></div><Badges/></section>
         <section className="right-card social-right"><div className="right-title"><span className="right-icon"><ExternalLink size={15}/></span><h3>Find me online</h3></div>{socialTags.map(s=>{const Icon=s.icon;return <a className="social-row" key={s.label} href={s.href} target={s.label==='Email'||s.label==='Resume'?undefined:'_blank'} rel="noreferrer" download={s.download||undefined}><span className={`social-row-icon ${s.kind}`}><Icon size={15}/></span><span><b>{s.label}</b><small>{s.handle}</small></span><ArrowUpRight size={13}/></a>})}</section>
       </aside>
     </div>
