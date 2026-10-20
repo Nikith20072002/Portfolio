@@ -263,9 +263,9 @@ function App() {
         <section className="right-card"><div className="right-title"><span className="right-icon purple"><Code2 size={16}/></span><h3>Top skills</h3></div><div className="right-tags">{skills.slice(0,13).map(s=><a href="#skills" key={s.name}>{s.name}</a>)}</div></section>
         <section className="right-card"><div className="right-title"><span className="right-icon green"><Award size={16}/></span><h3>Badges</h3></div><Badges/></section>
         <section className="right-card social-right"><div className="right-title"><span className="right-icon"><ExternalLink size={15}/></span><h3>Find me online</h3></div>{socialTags.map(s=>{const Icon=s.icon;return <a className="social-row" key={s.label} href={s.href} target={s.label==='Email'||s.label==='Resume'?undefined:'_blank'} rel="noreferrer" download={s.download||undefined}><span className={`social-row-icon ${s.kind}`}><Icon size={15}/></span><span><b>{s.label}</b><small>{s.handle}</small></span><ArrowUpRight size={13}/></a>})}</section>
-        <section className="right-card signature-card"><a className="footer-logo" href="#home">N<span>.</span></a><div className="signature-copy"><span>Designed with intention.</span><small>© 2026 {profile.name.toUpperCase()}</small></div></section>
       </aside>
     </div>
+    <section className="right-card signature-card"><a className="footer-logo" href="#home">N<span>.</span></a><div className="signature-copy"><span>Designed with intention.</span><small>© 2026 {profile.name.toUpperCase()}</small></div></section>
   </div>
 }
 
