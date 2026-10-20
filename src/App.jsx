@@ -255,7 +255,6 @@ function App() {
 
         <section className="contact-section" id="contact"><div className="contact-copy"><span className="section-eyebrow">THE NEXT CHAPTER / 07</span><h2>Let’s make something<br/><span>meaningful.</span></h2><p>Have an opportunity, collaboration, or interesting data problem? I’d be glad to connect.</p><div className="contact-buttons"><a href={`mailto:${profile.email}`} className="button primary"><Send size={15}/> Say hello <ArrowRight size={15}/></a><button className="button outline" onClick={copyEmail}>{copied?<Check size={15}/>:<Copy size={15}/>} {copied?'Copied email':'Copy email'}</button></div></div><div className="contact-card"><span>CONTACT CARD</span><div className="contact-initials">N.</div><b>{profile.name}</b><small>{profile.role}</small><a href={`mailto:${profile.email}`}><Mail size={14}/>{profile.email}</a><a href={profile.linkedin} target="_blank" rel="noreferrer"><Linkedin size={14}/>LinkedIn profile <ArrowUpRight size={12}/></a><a href={profile.github} target="_blank" rel="noreferrer"><Github size={14}/>GitHub profile <ArrowUpRight size={12}/></a></div></section>
 
-        <footer className="footer"><a className="footer-logo" href="#home">N<span>.</span></a><span>Designed with intention. Built with React + Vite.</span><span className="footer-right">© 2026 NIKITH SAI REDDY BANDA</span></footer>
       </main>
 
       <aside className="right-column">
@@ -264,6 +263,7 @@ function App() {
         <section className="right-card"><div className="right-title"><span className="right-icon purple"><Code2 size={16}/></span><h3>Top skills</h3></div><div className="right-tags">{skills.slice(0,13).map(s=><a href="#skills" key={s.name}>{s.name}</a>)}</div></section>
         <section className="right-card"><div className="right-title"><span className="right-icon green"><Award size={16}/></span><h3>Badges</h3></div><Badges/></section>
         <section className="right-card social-right"><div className="right-title"><span className="right-icon"><ExternalLink size={15}/></span><h3>Find me online</h3></div>{socialTags.map(s=>{const Icon=s.icon;return <a className="social-row" key={s.label} href={s.href} target={s.label==='Email'||s.label==='Resume'?undefined:'_blank'} rel="noreferrer" download={s.download||undefined}><span className={`social-row-icon ${s.kind}`}><Icon size={15}/></span><span><b>{s.label}</b><small>{s.handle}</small></span><ArrowUpRight size={13}/></a>})}</section>
+        <section className="right-card signature-card"><a className="footer-logo" href="#home">N<span>.</span></a><div className="signature-copy"><span>Designed with intention.</span><small>© 2026 {profile.name.toUpperCase()}</small></div></section>
       </aside>
     </div>
   </div>

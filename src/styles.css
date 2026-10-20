@@ -38,7 +38,46 @@
   .heatmap i.level-3,.heatmap-legend i.level-3{background:#3b9957}
   .heatmap i.level-4,.heatmap-legend i.level-4{background:#59c477}
   .contact-section{background:#20211e}
+
   .contact-initials{background:#292a26;color:#9ab0ff}
   .footer{color:#aaa99f}
   .footer-logo{background:#292a26;color:#f0f0ec}
+}
+
+:root,
+body {
+  background: #000;
+}
+
+.topbar {
+  background: #000;
+}
+
+.right-column .right-card {
+  background: #000;
+}
+
+.signature-card {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 14px;
+  border: 1px solid #343530;
+  border-radius: 8px;
+  grid-column: 1 / -1;
+}
+
+.signature-copy {
+  display: grid;
+  gap: 5px;
+}
+
+.signature-copy span {
+  font: italic 11px/1.5 'Space Grotesk';
+}
+
+.signature-copy small {
+  color: #aaa99f;
+  font: 8px 'DM Mono';
+  letter-spacing: .4px;
 }
