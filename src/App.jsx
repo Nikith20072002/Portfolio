@@ -233,7 +233,7 @@ function App() {
 
     <div className="page-grid">
       <aside className="profile-column">
-        <div className="avatar-wrap"><div className="avatar-placeholder"><span>N<span>.</span></span><small>ADD PHOTO</small></div><span className="avatar-status" title="Open to opportunities"/></div>
+        <div className="avatar-wrap"><img className="profile-photo" src="/profile-photo.jpg" alt={`${profile.name} profile photo`} /><span className="avatar-status" title="Open to opportunities"/></div>
         <h1>{profile.name}</h1><p className="profile-role">{profile.role}</p>
         <p className="profile-bio">Turning data into meaningful insights and ideas into impact.</p>
         <a className="resume-button" href={profile.resume} download><Download size={16}/> Download Resume <ArrowDownRight size={15}/></a>
