@@ -26,22 +26,28 @@ const socialTags = [
 
 const projects = [
   {
+    name: 'AI Brand Search Popularity Analysis', repo: 'ai-leaders-by-country.ipynb', visibility: 'COMPLETED · OCT 2026',
+    description: 'Developed a Python/Pandas Jupyter Notebook analyzing AI brand search-demand data across countries. Compared the top brands by country, validated source rankings using average monthly searches, and created visualizations to communicate the findings.',
+    tech: ['Data Analysis', 'Python', 'Git', 'Pandas', 'Data Visualization'], color: 'cyan', icon: BarChart3,
+    href: 'https://vscode.dev/github/Nikith20072002/search-index/blob/solution/notebooks/ai-leaders-by-country.ipynb', status: 'Analytics'
+  },
+  {
     name: 'Diwali Sales Analysis', repo: 'diwali-sales-analysis', visibility: 'FEATURED PROJECT',
     description: 'Exploratory data analysis to identify customer purchasing patterns, sales trends, and high-performing product categories.',
     tech: ['Python', 'Pandas', 'Seaborn'], color: 'blue', icon: BarChart3,
-    href: 'https://github.com/', status: 'Analytics'
+    href: 'https://github.com/Nikith20072002/Data-Analysis-Project-1', status: 'Analytics'
   },
   {
     name: 'Data Analytics Job Simulation', repo: 'deloitte-data-analytics-forage', visibility: 'JOB SIMULATION',
     description: 'Completed Deloitte Australia data analytics simulation tasks involving employee equality data classification and Tableau visualization.',
     tech: ['Excel', 'Tableau', 'Data Analysis'], color: 'cyan', icon: BarChart3,
-    href: 'https://www.theforage.com/', status: 'Forage'
+    href: 'https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_n2jtbxcFWxyM9wxML_1740235843126_completion_certificate.pdf', status: 'Forage'
   },
   {
     name: 'Portfolio Website', repo: 'nikith-portfolio', visibility: 'THIS WEBSITE',
     description: 'A responsive personal portfolio built with React and Vite, designed for deployment through a Git-based workflow.',
     tech: ['React', 'Vite', 'CSS', 'CI/CD'], color: 'blue', icon: Code2,
-    href: 'https://github.com/', status: 'Web development'
+    href: 'https://github.com/Nikith20072002/Portfolio', status: 'Web development'
   },
 ]
 
@@ -100,22 +106,22 @@ const certifications = [
   { title: 'Hands-On Essentials: Data Warehousing Workshop', issuer: 'Snowflake', date: 'OCT 2026', icon: Database },
   { title: 'Exploring SAP Datasphere — Course Completion', issuer: 'SAP', date: 'MAY 2025', icon: Database },
   { title: 'Data Analyst Certification', issuer: 'OneRoadmap', date: 'APR 2025', icon: BarChart3 },
-  { title: 'Deloitte Australia — Data Analytics Job Simulation', issuer: 'Forage', date: 'FEB 2025', icon: BarChart3 },
+  { title: 'Deloitte Australia — Data Analytics Job Simulation', issuer: 'Forage', date: 'FEB 2025', icon: BarChart3, href: 'https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_n2jtbxcFWxyM9wxML_1740235843126_completion_certificate.pdf' },
   { title: 'SQL (Basic)', issuer: 'HackerRank', date: 'JAN 2025', icon: Code2 },
   { title: 'Python (Basics)', issuer: 'HackerRank', date: 'JAN 2025', icon: Code2 },
   { title: 'Big Data Foundations — Level 1', issuer: 'IBM', date: 'NOV 2024', icon: Database },
   { title: 'Big Data 101', issuer: 'IBM SkillsBuild', date: 'NOV 2024', icon: Database },
-  { title: 'Data Fundamentals', issuer: 'IBM', date: 'NOV 2024', icon: BarChart3 },
+  { title: 'Data Fundamentals', issuer: 'IBM', date: 'NOV 2024', icon: BarChart3, href: 'https://www.credly.com/badges/eb256e43-8705-4c58-813a-07d03f749eff/linked_in_profile' },
   { title: 'Career Essentials in Data Analysis', issuer: 'Microsoft and LinkedIn', date: 'NOV 2024', icon: BarChart3 },
   { title: 'How to Use Data Visualization to Make Better Decisions—Faster', issuer: 'LinkedIn Learning', date: 'JAN 2024', icon: BarChart3 },
   { title: 'Introduction to Prompt Engineering for Generative AI', issuer: 'LinkedIn Learning', date: 'JAN 2024', icon: Code2 },
   { title: 'Programming Foundations: Data Structures', issuer: 'LinkedIn Learning', date: 'JAN 2024', icon: Code2 },
-  { title: 'Become a Data Analyst', issuer: 'LinkedIn Learning', date: 'JAN 2024', icon: BarChart3 },
+  { title: 'Become a Data Analyst', issuer: 'LinkedIn Learning', date: 'JAN 2024', icon: BarChart3, href: 'https://www.linkedin.com/learning/certificates/057f5bfa9b042288fe24d378ce0a214ca0ac26e98ea58fc713025435e4e3e5df/' },
   { title: 'SQL: Data Reporting and Analysis', issuer: 'LinkedIn Learning', date: 'JAN 2024', icon: Code2 },
   { title: 'Tableau Essential Training', issuer: 'LinkedIn Learning', date: 'JAN 2024', icon: BarChart3 },
   { title: 'Learning Data Visualization', issuer: 'LinkedIn Learning', date: 'JAN 2024', icon: BarChart3 },
   { title: 'Software Testing Tutorial', issuer: 'Great Learning', date: 'FEB 2023', icon: Code2 },
-  { title: 'What is IoT?', issuer: 'Great Learning', date: 'MAR 2023', icon: Code2 },
+  { title: 'What is IoT?', issuer: 'Great Learning', date: 'MAR 2023', icon: Code2, href: 'https://www.mygreatlearning.com/certificate/JGMVORTA' },
   { title: 'Machine Learning A-Z: AI, Python & R', issuer: 'Udemy', date: 'MAR 2023', icon: BarChart3 },
   { title: 'Power BI Essential Training', issuer: 'LinkedIn Learning', date: 'DEC 2023', icon: BarChart3 },
   { title: 'Introduction to Career Skills in Data Analytics', issuer: 'LinkedIn Learning', date: 'DEC 2023', icon: BarChart3 },
@@ -123,18 +129,18 @@ const certifications = [
   { title: 'Excel Statistics Essential Training: 1', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: BarChart3 },
   { title: 'Learning Data Analytics Part 2: Extending and Applying Core Knowledge', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: BarChart3 },
   { title: 'Succeeding in Software Testing', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: Code2 },
-  { title: 'Agile Testing', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: Code2 },
+  { title: 'Agile Testing', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: Code2, href: 'https://www.linkedin.com/learning/certificates/166f2587c5960458cd4673c819ee885d8d271afe08b6fc6deb14b81ab8f98dc5/' },
   { title: 'Software Testing Tips Weekly', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: Code2 },
   { title: 'Data Cleaning in Python Essential Training', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: Code2 },
+  { title: 'How to Learn Faster', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: BarChart3, href: 'https://www.linkedin.com/learning/certificates/c6d12e6c35fc947ad97d13ba655264fe5de26b6f00d100ddc2fa48873119f6b9/' },
   { title: 'Learning Data Analytics: 1 Foundations', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: BarChart3 },
   { title: 'Statistics Foundations 1: The Basics', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: BarChart3 },
   { title: 'Data Fluency: Exploring and Describing Data', issuer: 'LinkedIn Learning', date: 'NOV 2023', icon: BarChart3 },
-  { title: 'What Is Generative AI?', issuer: 'LinkedIn Learning', date: 'SEP 2023', icon: Code2 },
+  { title: 'What Is Generative AI?', issuer: 'LinkedIn Learning', date: 'SEP 2023', icon: Code2, href: 'https://www.linkedin.com/learning/certificates/1c05ad14038fa5c2664a50131683b2f070cf735da3396cb7a773d1b1c5f5797d/' },
   { title: 'Getting Started with Bard, Google’s Experimental AI', issuer: 'LinkedIn Learning', date: 'SEP 2023', icon: Code2 },
   { title: 'Learning Excel: Data Analysis', issuer: 'LinkedIn Learning', date: 'SEP 2023', icon: FileText },
-  { title: 'Python in Excel', issuer: 'LinkedIn Learning', date: 'SEP 2023', icon: Code2 },
+  { title: 'Python in Excel', issuer: 'LinkedIn Learning', date: 'SEP 2023', icon: Code2, href: 'https://www.linkedin.com/learning/certificates/fd2be3d00e2071a56c2d54d32c73a58f276745e22ddc49c95f2653bfb9c72f1e/' },
   { title: 'Power BI: Dashboards for Beginners', issuer: 'LinkedIn Learning', date: 'SEP 2023', icon: BarChart3 },
-  { title: 'GPT-4 Foundations: Building AI-Powered Apps', issuer: 'LinkedIn Learning', date: 'SEP 2023', icon: Code2 },
 ]
 
 function Badges() {
@@ -251,7 +257,7 @@ function App() {
 
         <section className="skills-section" id="skills"><SectionTitle eyebrow="TOOLS OF THE TRADE / 05" title="Skills & technologies"/><p className="section-description">A practical and growing toolkit across data analysis, reporting, programming, and web development.</p><div className="skills-tags">{skills.map(s=><span key={s.name} title={s.group}>{s.name}<small>{s.group}</small></span>)}</div></section>
 
-        <section className="cert-section" id="certifications"><SectionTitle eyebrow="KEEP LEARNING / 06" title="Certifications & learning"/><div className="cert-list">{certifications.map(c=>{const Icon=c.icon;return <article className="cert-item" key={c.title}><span className="cert-icon"><Icon size={18}/></span><div><h3>{c.title}</h3><p>{c.issuer}</p></div><span className="cert-date">{c.date}</span><ArrowUpRight size={15}/></article>})}</div><p className="verify-note">Credentials listed from your LinkedIn certificates export.</p></section>
+        <section className="cert-section" id="certifications"><SectionTitle eyebrow="KEEP LEARNING / 06" title="Certifications & learning"/><div className="cert-list">{certifications.map(c=>{const Icon=c.icon;return <article className="cert-item" key={c.title}><span className="cert-icon"><Icon size={18}/></span><div><h3>{c.href ? <a href={c.href} target="_blank" rel="noreferrer">{c.title}</a> : c.title}</h3><p>{c.issuer}</p></div><span className="cert-date">{c.date}</span><ArrowUpRight size={15}/></article>})}</div><p className="verify-note">Credentials listed from your LinkedIn certificates export.</p></section>
 
         <section className="contact-section" id="contact"><div className="contact-copy"><span className="section-eyebrow">THE NEXT CHAPTER / 07</span><h2>Let’s make something<br/><span>meaningful.</span></h2><p>Have an opportunity, collaboration, or interesting data problem? I’d be glad to connect.</p><div className="contact-buttons"><a href={`mailto:${profile.email}`} className="button primary"><Send size={15}/> Say hello <ArrowRight size={15}/></a><button className="button outline" onClick={copyEmail}>{copied?<Check size={15}/>:<Copy size={15}/>} {copied?'Copied email':'Copy email'}</button></div></div><div className="contact-card"><span>CONTACT CARD</span><div className="contact-initials">N.</div><b>{profile.name}</b><small>{profile.role}</small><a href={`mailto:${profile.email}`}><Mail size={14}/>{profile.email}</a><a href={profile.linkedin} target="_blank" rel="noreferrer"><Linkedin size={14}/>LinkedIn profile <ArrowUpRight size={12}/></a><a href={profile.github} target="_blank" rel="noreferrer"><Github size={14}/>GitHub profile <ArrowUpRight size={12}/></a></div></section>
 
@@ -259,10 +265,7 @@ function App() {
 
       <aside className="right-column">
         <section className="right-card about-right" id="about"><div className="right-title"><span className="right-icon"><BadgeCheck size={16}/></span><h3>About me</h3></div><p>I’m a Computer Science graduate with a passion for data analytics, visualization, and building solutions. I enjoy learning new technologies and working on real-world projects that create impact.</p><div className="detail-line"><span>⌖</span>{profile.location}</div><div className="detail-line"><GraduationCap size={14}/><span className="detail-text">B.Tech CSE · KG Reddy College</span></div><div className="detail-line"><BriefcaseBusiness size={14}/><span className="detail-text">Aspiring Data Analyst</span></div><div className="detail-line"><Mail size={14}/><a href={`mailto:${profile.email}`}>{profile.email}</a></div></section>
-        <section className="right-card"><div className="right-title"><span className="right-icon blue"><BarChart3 size={16}/></span><h3>Quick stats</h3></div><div className="stats-grid"><div><b>6+</b><span>Projects & exercises</span></div><div><b>10+</b><span>Tools explored</span></div><div><b>3</b><span>Learning tracks</span></div></div><small className="right-muted">Portfolio highlights, not verified live counters.</small></section>
-        <section className="right-card"><div className="right-title"><span className="right-icon purple"><Code2 size={16}/></span><h3>Top skills</h3></div><div className="right-tags">{skills.slice(0,13).map(s=><a href="#skills" key={s.name}>{s.name}</a>)}</div></section>
         <section className="right-card"><div className="right-title"><span className="right-icon green"><Award size={16}/></span><h3>Badges</h3></div><Badges/></section>
-        <section className="right-card social-right"><div className="right-title"><span className="right-icon"><ExternalLink size={15}/></span><h3>Find me online</h3></div>{socialTags.map(s=>{const Icon=s.icon;return <a className="social-row" key={s.label} href={s.href} target={s.label==='Email'||s.label==='Resume'?undefined:'_blank'} rel="noreferrer" download={s.download||undefined}><span className={`social-row-icon ${s.kind}`}><Icon size={15}/></span><span><b>{s.label}</b><small>{s.handle}</small></span><ArrowUpRight size={13}/></a>})}</section>
       </aside>
     </div>
     <section className="right-card signature-card"><a className="footer-logo" href="#home">N<span>.</span></a><div className="signature-copy"><span>Designed with intention.</span><small>© 2026 {profile.name.toUpperCase()}</small></div></section>

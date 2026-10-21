@@ -57,6 +57,46 @@ body {
   background: #000;
 }
 
+.right-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right-column {
+  display: grid;
+  gap: 16px;
+}
+
+.credly-badges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.credly-badges > * {
+  display: block;
+}
+
+.right-title h3 {
+  margin: 0;
+}
+
+.about-right .detail-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.right-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
 .signature-card {
   display: flex;
   align-items: center;
@@ -86,4 +126,19 @@ body {
   color: #aaa99f;
   font: 7px 'DM Mono';
   letter-spacing: .4px;
+}
+
+@media (prefers-color-scheme: dark) and (max-width: 850px) {
+  .page-grid .intro-card,
+  .page-grid .repo-card,
+  .page-grid .contrib-card,
+  .page-grid .education-list,
+  .page-grid .cert-list,
+  .page-grid .contact-section,
+  .page-grid .contact-card,
+  .page-grid .right-card {
+    background-color: #20211e;
+    border-color: #343530;
+    color: #e8e8e5;
+  }
 }
