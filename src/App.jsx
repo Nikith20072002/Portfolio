@@ -213,16 +213,14 @@ function App() {
   const [active, setActive] = useState('Home')
   const [filter, setFilter] = useState('All')
   const [menuOpen, setMenuOpen] = useState(false)
-  const [query, setQuery] = useState('')
   const [copied, setCopied] = useState(false)
   const nav = [
     ['Home', '#home'], ['About', '#about'], ['Projects', '#projects'],
     ['Experience', '#experience'], ['Skills', '#skills'], ['Certifications', '#certifications'], ['Contact', '#contact']
   ]
   const filteredProjects = projects.filter(p => {
-    const matchQuery = `${p.name} ${p.description} ${p.tech.join(' ')}`.toLowerCase().includes(query.toLowerCase())
     const matchFilter = filter === 'All' || p.status.toLowerCase().includes(filter.toLowerCase()) || p.tech.some(t => t.toLowerCase().includes(filter.toLowerCase()))
-    return matchQuery && matchFilter
+    return matchFilter
   })
   const copyEmail = async () => {
     try { await navigator.clipboard.writeText(profile.email); setCopied(true); setTimeout(() => setCopied(false), 2000) }
@@ -235,7 +233,7 @@ function App() {
       <a className="wordmark" href="#home" onClick={() => selectNav('Home')}><span className="wordmark-symbol">N</span><span>Nikith<span className="wordmark-dot">.</span></span></a>
       <button className="mobile-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">{menuOpen ? <X/> : <Menu/>}</button>
       <nav className={menuOpen ? 'nav open' : 'nav'}>{nav.map(([label, href])=><a key={label} className={active===label?'active':''} href={href} onClick={()=>selectNav(label)}>{label}</a>)}</nav>
-      <div className="top-right"><a href="#projects" className="search-link"><span>⌕</span> Find a project <kbd>/</kbd></a><span className="availability"><i/> Available</span></div>
+      <div className="top-right"><span className="availability"><i/> Available</span></div>
     </header>
 
     <div className="page-grid">
