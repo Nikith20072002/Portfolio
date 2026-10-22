@@ -29,7 +29,7 @@ const projects = [
     name: 'Weather Data Pipeline', repo: 'Airflow-Docker', visibility: 'COMPLETED · OCT 2026',
     description: 'An automated end-to-end data pipeline orchestrated with Apache Airflow (Docker) that extracts daily weather forecasts from the Open-Meteo REST API, transforms the payload, and performs uploads into PostgreSQL.',
     tech: ['Airflow', 'Docker', 'PostgreSQL'], color: 'cyan', icon: BarChart3,
-    href: 'https://vscode.dev/github/Nikith20072002/search-index/blob/solution/notebooks/ai-leaders-by-country.ipynb', status: 'Analytics'
+    href: 'https://github.com/Nikith20072002/airflow-docker', status: 'Analytics'
   },
 
   {
