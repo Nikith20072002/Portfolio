@@ -25,6 +25,13 @@ const socialTags = [
 ]
 
 const projects = [
+    {
+    name: 'Weather Data Pipeline', repo: 'Airflow-Docker', visibility: 'COMPLETED · OCT 2026',
+    description: 'An automated end-to-end data pipeline orchestrated with Apache Airflow (Docker) that extracts daily weather forecasts from the Open-Meteo REST API, transforms the payload, and performs uploads into PostgreSQL.',
+    tech: ['Airflow', 'Docker', 'PostgreSQL'], color: 'cyan', icon: BarChart3,
+    href: 'https://vscode.dev/github/Nikith20072002/search-index/blob/solution/notebooks/ai-leaders-by-country.ipynb', status: 'Analytics'
+  },
+
   {
     name: 'AI Brand Search Popularity Analysis', repo: 'ai-leaders-by-country.ipynb', visibility: 'COMPLETED · OCT 2026',
     description: 'Developed a Python/Pandas Jupyter Notebook analyzing AI brand search-demand data across countries. Compared the top brands by country, validated source rankings using average monthly searches, and created visualizations to communicate the findings.',
@@ -52,7 +59,7 @@ const projects = [
 ]
 
 const skills = [
-  { name: 'Python', group: 'Programming' }, { name: 'SQL / MySQL', group: 'Data' },
+  { name: 'Docker', group: 'Virtualization' },{ name: 'Airflow', group: 'Data Engineering' }, { name: 'Python', group: 'Programming' }, { name: 'SQL / MySQL', group: 'Data' },
   { name: 'Excel', group: 'Reporting' }, { name: 'Power BI', group: 'Visualization' },
   { name: 'Tableau', group: 'Visualization' }, { name: 'Pandas', group: 'Analytics' },
   { name: 'Seaborn', group: 'Analytics' }, { name: 'scikit-learn', group: 'Machine Learning' },
