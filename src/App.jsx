@@ -59,7 +59,7 @@ const projects = [
 ]
 
 const skills = [
-  { name: 'Docker', group: 'Virtualization' },{ name: 'Airflow', group: 'Data Engineering' }, { name: 'Python', group: 'Programming' }, { name: 'SQL / MySQL', group: 'Data' },
+  { name: 'Docker', group: 'Virtualization' },{ name: 'Airflow', group: 'Data Engineering' }, { name: 'Python', group: 'Programming' }, { name: 'SQL / MySQL/Postgres', group: 'Data' },
   { name: 'Excel', group: 'Reporting' }, { name: 'Power BI', group: 'Visualization' },
   { name: 'Tableau', group: 'Visualization' }, { name: 'Pandas', group: 'Analytics' },
   { name: 'Seaborn', group: 'Analytics' }, { name: 'scikit-learn', group: 'Machine Learning' },
@@ -93,7 +93,7 @@ const skills = [
   { name: 'Microsoft SQL Server', group: 'Database' },
   { name: 'Artificial Intelligence', group: 'Computer science' },
   { name: 'Generative AI', group: 'Artificial intelligence' },
-  { name: 'GPT-4', group: 'Generative AI' },
+
   { name: 'Data Science', group: 'Analytics' },
   { name: 'Data-driven Decision Making', group: 'Data analysis' },
   { name: 'Business Analysis', group: 'Data analysis' },
